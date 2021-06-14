@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 0.1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: 'nav nav nav'
+                         'descView profileView socialView'
+                         'descView profileView socialView'
+                         'descView profileView socialView'
+                         ;
+    text-align: center;
+    grid-auto-flow: row;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: orange; */
+    grid-area: nav;
+}
+.myName {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.myName p {
+    font-family: Helvetica;
+}
+.navItem {
+    padding-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navItem p {
+    margin-left: 50px;
+    font-family: Helvetica;
+    
+}
+.descView {
+    /* background: tomato; */
+    grid-area: descView;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.descView p {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.3rem;
+    font-family: Helvetica;
+    margin-bottom: 30px;
+}
+.descView h2 {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 3rem;
+    font-family: Helvetica;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sp1 {
+    color: #FAD746;
+}
+.sp2 {
+    color: #FAD746;
+}
+.btnProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    color: white;
+    font-family: Helvetica;
+    font-size: 20px;
+    background: #FAD746;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 30px;
+    
+    
+}
+.btnProject p {
+    width: 80%;
+    height: 80%;
+    background-color: grey;
+}
+.profileView {
+    grid-area: profileView;
+    display: flex;
+    justify-content: center;
+}
+.picture {
+    background: url(/image/ProfilePic.png) no-repeat;
+    background-size: contain;
+    width: 60%;
+    margin-top: 8rem;
+}
+.socialView {
+    /* background: grey; */
+    grid-area: socialView;
+    display: flex;
+    flex-direction: column;
+}
+.emptyDiv {
+    height: 50%;
+    
+}
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    /* background:grey ; */
+    height: 50%;
+    justify-content: center;
+    
+}
+.stack {
+    background: url(/image/stack.png) no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 20%;
+    
+}
+.git {
+    background: url(/image/git.png) no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 20%;
+}
+.linkd {
+    background: url(/image/linkd.png) no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 20%;
+}
+
+/* PROJECT SECTION */
+
+.projects {
+    height: 100vh;
+    background: grey;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 0.3fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        grid-template-areas: 
+        "nav"
+        "descView"
+        "profileView"
+        "socialView"
+       ;
+    }
+}
