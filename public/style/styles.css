@@ -98,11 +98,7 @@
   margin-top: 40px;
   margin-left: 30px;
   letter-spacing: 0.1em;
-}
-.btnProject p {
-  width: 80%;
-  height: 80%;
-  background-color: grey;
+  cursor: pointer;
 }
 .profileView {
   grid-area: profileView;
@@ -136,18 +132,21 @@
   background-size: contain;
   width: 2rem;
   height: 20%;
+  cursor: pointer;
 }
 .git {
   background: url(/image/git.png) no-repeat;
   background-size: contain;
   width: 2rem;
   height: 20%;
+  cursor: pointer;
 }
 .linkd {
   background: url(/image/linkd.png) no-repeat;
   background-size: contain;
   width: 2rem;
   height: 20%;
+  cursor: pointer;
 }
 
 /* PROJECT SECTION */
@@ -186,6 +185,7 @@
     border-radius: 20px;
     visibility: visible;
     position: fixed;
+    cursor: pointer;
   }
   .myName {
     display: flex;
@@ -238,6 +238,7 @@
     font-size: 1rem;
     margin-top: 30px;
     color: black;
+    cursor: pointer;
   }
   .socialView {
     display: flex;
