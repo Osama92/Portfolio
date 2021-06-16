@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 //Projects
 app.get("/Projects", (req, res) => {
-  // res.send('Project Page')
+  res.send("Project Page");
 });
 
 app.listen(port, () => {
