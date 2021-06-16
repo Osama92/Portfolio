@@ -163,11 +163,10 @@
 @media only screen and (max-width: 720px) {
   .container {
     grid-template-columns: 1fr;
-    /* grid-template-rows: 0.5fr; */
+    grid-template-rows: 5fr 1fr;
     grid-template-areas:
       "nav"
       "descView"
-      "profileView"
       "socialView";
     height: 90vh;
   }
@@ -175,8 +174,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     align-items: center;
+    background: orange;
   }
   .menu {
     display: flex;
@@ -194,10 +194,13 @@
     cursor: pointer;
   }
   .close {
-    display: none;
+    /* display: none; */
   }
   .checkbox {
-    display: none;
+    /* display: none; */
+  }
+  #checkbox :checked ~ .navItem {
+    background: red;
   }
   .myName {
     display: flex;
@@ -220,23 +223,30 @@
   .navItem {
     padding: 0;
     width: 100%;
-    display: flex;
+    display: block;
     flex-direction: column;
+    gap: 2rem;
+    height: 100%;
     justify-content: space-evenly;
     align-items: center;
   }
   .navItem p {
+    /* display: none;
+    visibility: hidden; */
     margin: 0;
     font-size: 0.8rem;
     color: grey;
     font-weight: 700;
+  }
+  .descView {
+    background: grey;
+    width: 100%;
   }
   .descView p {
     font-size: 0.85rem;
     text-align: center;
     padding: 0;
     margin-bottom: 10px;
-    margin-top: 50px;
   }
   .descView h2 {
     font-size: 1.6rem;
@@ -259,10 +269,7 @@
     width: 100%;
     height: 80px;
     flex-direction: row;
+    background: pink;
     /* background: green; */
-  }
-  .profileView {
-    display: none;
-    visibility: hidden;
   }
 }
