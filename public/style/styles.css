@@ -165,7 +165,7 @@
       "descView"
       "profileView"
       "socialView";
-    height: 100vh;
+    height: 90vh;
   }
   .nav {
     display: flex;
@@ -193,6 +193,7 @@
     align-items: center;
     padding: 0;
     padding-top: 20px;
+    margin-top: 30px;
     width: 100%;
   }
   .myName p {
