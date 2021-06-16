@@ -98,11 +98,7 @@
   margin-top: 40px;
   margin-left: 30px;
   letter-spacing: 0.1em;
-}
-.btnProject p {
-  width: 80%;
-  height: 80%;
-  background-color: grey;
+  cursor: pointer;
 }
 .profileView {
   grid-area: profileView;
@@ -136,18 +132,21 @@
   background-size: contain;
   width: 2rem;
   height: 20%;
+  cursor: pointer;
 }
 .git {
   background: url(/image/git.png) no-repeat;
   background-size: contain;
   width: 2rem;
   height: 20%;
+  cursor: pointer;
 }
 .linkd {
   background: url(/image/linkd.png) no-repeat;
   background-size: contain;
   width: 2rem;
   height: 20%;
+  cursor: pointer;
 }
 
 /* PROJECT SECTION */
@@ -157,16 +156,16 @@
   background: grey;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 0.5fr; */
     grid-template-areas:
       "nav"
       "descView"
       "profileView"
       "socialView";
-    height: 70vh;
+    height: 100vh;
   }
   .nav {
     display: flex;
@@ -186,6 +185,7 @@
     border-radius: 20px;
     visibility: visible;
     position: fixed;
+    cursor: pointer;
   }
   .myName {
     display: flex;
@@ -222,7 +222,7 @@
     text-align: center;
     padding: 0;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .descView h2 {
     font-size: 1.6rem;
@@ -232,12 +232,13 @@
   .btnProject {
     margin-left: 0;
     margin: auto;
-    width: 150px;
+    width: 180px;
     height: 40px;
     border-radius: 10px;
     font-size: 1rem;
     margin-top: 30px;
     color: black;
+    cursor: pointer;
   }
   .socialView {
     display: flex;
