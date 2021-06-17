@@ -210,7 +210,7 @@ body {
   }
   .myName p {
     font-size: 1rem;
-    margin-top: 80px;
+    margin-top: 90px;
     width: 100%;
     text-align: left;
     padding: 0 0 0 20px;
@@ -235,6 +235,7 @@ body {
     flex-direction: column;
     height: 50%;
     width: 100%;
+    margin-top: 40px;
   }
   .descView p {
     font-size: 0.85rem;
@@ -259,15 +260,17 @@ body {
     margin: left;
     width: 180px;
     height: 40px;
+    text-align: right;
     border-radius: 10px;
     font-size: 1rem;
-    margin-top: 40px;
+    margin-top: 60px;
     color: black;
     cursor: pointer;
   }
   .socialView {
     width: 100%;
     height: 25%;
+    margin-top: 50px;
   }
   .socialIcons {
     display: flex;
