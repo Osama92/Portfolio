@@ -188,7 +188,7 @@ body {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: #fad746;
+    /* background: #fad746; */
     position: absolute;
     top: 40px;
     right: 40px;
@@ -251,6 +251,7 @@ body {
     text-align: left;
     padding: 0 0 0 20px;
     width: fit-content;
+    font-weight: 700;
 
     margin-top: 5px;
     height: 50%;
@@ -262,7 +263,7 @@ body {
     height: 40px;
     text-align: right;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 60px;
     color: black;
     cursor: pointer;
