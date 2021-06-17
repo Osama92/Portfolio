@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
 
 .container {
   display: grid;
@@ -176,9 +179,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 30vh; */
+    height: 25%;
     align-items: center;
-    background: greenyellow;
   }
   .menu {
     display: flex;
@@ -195,21 +197,12 @@
     position: fixed;
     cursor: pointer;
   }
-  .close {
-    /* display: none; */
-  }
-  .checkbox {
-    /* display: none; */
-  }
-  #check:checked ~ .close {
-    display: none;
-  }
+
   .myName {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding-top: 20px;
     margin-top: 30px;
     width: 100%;
   }
@@ -242,8 +235,6 @@
   .descView {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background: orange;
     height: 50%;
     width: 100%;
   }
@@ -251,12 +242,19 @@
     font-size: 0.85rem;
     text-align: center;
     padding: 0;
-    margin-bottom: 10px;
+    margin: 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 5%;
   }
   .descView h2 {
     font-size: 1.6rem;
     text-align: center;
-    padding: 0;
+    padding: 0 5px 0 5px;
+    width: fit-content;
+
+    margin-top: 5px;
+    height: 50%;
   }
   .btnProject {
     margin-left: 0;
@@ -270,12 +268,47 @@
     cursor: pointer;
   }
   .socialView {
+    width: 100%;
+    height: 25%;
+    background: #fad746;
+  }
+  .socialIcons {
     display: flex;
     flex-direction: row;
+    height: 100%;
     width: 100%;
-    height: 80px;
-    background: pink;
-    /* background: green; */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .stack {
+    background: url(/image/stack.png) no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .git {
+    background: url(/image/git.png) no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .linkd {
+    background: url(/image/linkd.png) no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .profileView {
     display: none;
