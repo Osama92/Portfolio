@@ -24,7 +24,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background: orange; */
   grid-area: nav;
 }
 .menu {
@@ -61,7 +60,6 @@ body {
   color: #fad746;
 }
 .descView {
-  /* background: tomato; */
   grid-area: descView;
   display: flex;
   justify-content: center;
@@ -119,7 +117,6 @@ body {
   margin-top: 8rem;
 }
 .socialView {
-  /* background: grey; */
   grid-area: socialView;
   display: flex;
   flex-direction: column;
@@ -130,7 +127,6 @@ body {
 .socialIcons {
   display: flex;
   flex-direction: column;
-  /* background:grey ; */
   height: 50%;
   justify-content: center;
 }
