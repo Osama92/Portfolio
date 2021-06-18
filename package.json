@@ -9,6 +9,8 @@
   "author": "Atobiloye Usama Adedayo",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@swup/js-plugin": "^1.0.4",
+    "express": "^4.17.1",
+    "swup": "^2.0.14"
   }
 }
