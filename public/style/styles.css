@@ -152,6 +152,9 @@ body {
   height: 20%;
   cursor: pointer;
 }
+.cover {
+  display: none;
+}
 
 /* PROJECT SECTION */
 
@@ -198,6 +201,7 @@ body {
     z-index: 6;
   }
   .cover {
+    display: none;
     position: absolute;
     z-index: 5;
     background: orange;
@@ -223,10 +227,10 @@ body {
     padding: 0 0 0 20px;
   }
   .mobilePix {
+    display: flex;
     position: absolute;
-    display: block;
     top: 30px;
-    padding: 0 0 0 20px;
+    margin: 0 0 0 20px;
     visibility: visible;
     width: 80px;
     height: 80px;
