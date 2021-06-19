@@ -193,7 +193,7 @@ body {
     /* background: #fad746; */
     position: absolute;
     top: 40px;
-    right: 40px;
+    right: 30px;
     border-radius: 20px;
     position: fixed;
     cursor: pointer;
@@ -209,9 +209,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .menuBtn:focus {
-    background: #fad746;
   }
   .cover {
     display: none;
@@ -233,9 +230,18 @@ body {
     width: 100%;
   }
   .options p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Comfortaa", cursive;
     font-size: 30px;
     cursor: pointer;
+    transition-duration: 1s;
+    width: 80%;
+    height: 25%;
+  }
+  .options p:hover {
+    background: #fad746;
   }
 
   .myName {
