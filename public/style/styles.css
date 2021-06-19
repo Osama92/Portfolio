@@ -242,6 +242,7 @@ body {
   }
   .options p:hover {
     background: #fad746;
+    text-transform: uppercase;
   }
 
   .myName {
