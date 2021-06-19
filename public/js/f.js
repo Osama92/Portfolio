@@ -3,7 +3,7 @@ const menu = document.querySelector(".open");
 menu.addEventListener("click", function () {
   const cover = document.querySelector(".cover");
   if (cover.style.display === "none") {
-    cover.style.display = "block";
+    cover.style.display = "flex";
   } else {
     cover.style.display = "none";
   }
