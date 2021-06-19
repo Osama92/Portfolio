@@ -1,6 +1,8 @@
 const menu = document.querySelector(".menuBtn");
 const cover = document.querySelector(".cover");
 
+cover.style.display = "none";
+
 menu.addEventListener("click", () => {
   if (cover.style.display === "none") {
     cover.style.display = "flex";
