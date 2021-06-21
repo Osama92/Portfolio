@@ -11,9 +11,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/home.html");
 });
 
-//Projects
-app.get("/Projects", (req, res) => {
-  res.send("Project Page");
+//Contact
+app.get("/Contact", (req, res) => {
+  res.sendFile(__dirname + "/views/contact.html");
 });
 
 app.listen(port, () => {
