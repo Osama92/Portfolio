@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
 app.get("/Contact", (req, res) => {
   res.sendFile(__dirname + "/views/contact.html");
 });
+//Projects
+app.post("/projects", (req, res) => {
+  res.render(__dirname + "/views/contact.html");
+});
 
 app.listen(port, () => {
   console.log(`App running at port ${port}`);

@@ -1,6 +1,7 @@
 const menu = document.querySelector(".menuBtn");
 const cover = document.querySelector(".cover");
 const options = document.querySelector(".options");
+// const projectBtn = document.querySelector(".");
 
 cover.style.display = "none";
 
