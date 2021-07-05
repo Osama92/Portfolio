@@ -12,13 +12,14 @@ app.get("/", (req, res) => {
 });
 
 //Contact
-app.get("/Contact", (req, res) => {
-  res.sendFile(__dirname + "/views/contact.html");
+app.post("/contact", (req, res) => {
+  // res.sendFile(__dirname + "/views/contact.html");
+  res.send(console.log("HI"));
 });
 //Projects
-app.post("/projects", (req, res) => {
-  res.render(__dirname + "/views/contact.html");
-});
+// app.post("/projects", (req, res) => {
+//   res.redirect(__dirname + "/views/contact.html");
+// });
 
 app.listen(port, () => {
   console.log(`App running at port ${port}`);
